@@ -1,0 +1,72 @@
+@charset 'UTF-8';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&family=Staatliches&family=Tapestry&display=swap');
+
+body{
+    background-color: rgba(0, 0, 0, 0.904);
+    margin: auto;
+}
+
+header{
+    background-color: black;
+    padding-bottom: 1px;
+    padding-top: 1px;
+}
+
+nav#fixGlossary{
+    background-color: rgba(0, 0, 0, 0.596);
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ul#glossary{
+    margin: 0;
+}
+li{
+    list-style: none;
+    display: inline;
+}
+
+ul#glossary>li>a:link{
+    text-decoration: none;
+    color: crimson;
+    font-family: 'Roboto';
+    font-size: 1.3em;
+    padding-right: 25px;
+}
+
+
+nav#cabecalho>ul>li{
+    display: inline;
+    text-align: center;
+    padding-right: 50px;
+
+}
+nav#cabecalho{
+    text-align: center;
+}
+
+ul.links>li>a:link{
+    text-decoration: none;
+    color: crimson;
+    font-family: 'Roboto';
+    font-size: 1.3em;
+}
+li.links{
+    text-decoration: none;
+    color: crimson;
+    font-family: 'Roboto';
+    font-size: 1.3em;
+}
+li.links>li>a:hover{
+    color: white;
+}
+#logo{
+    font-size: 2em;
+}
+#logo:link{
+    text-decoration: none;
+    color: crimson;
+    font-family: 'Roboto', sans-serif;
+    padding-right: 50px;
+}
