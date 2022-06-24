@@ -1,0 +1,505 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+npm i bootstrap-icons
+
+
+.top-banner{
+    width: 100%;
+    height: 100%;
+    background-image: url('img/banner01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: -1;
+}
+
+.funcionamento {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    color: white;
+    font-size: 13px;
+}
+
+.tel{
+    float: left;
+    padding-left: 300px;
+}
+.tel p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.horarios{
+    float: left;
+    padding-left: 50px;
+}
+.horarios p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sticky{
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.top-menu{
+    background-color: rgba(0, 0, 0, 0.445);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 33px;
+    
+}
+
+.logo {
+
+    font-size: 18px;
+    float: left;
+    padding-right: 150px;
+    padding-left: 300px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-weight: 350;
+    text-transform: uppercase;
+}
+
+.menu{
+    float: left;
+    width: 50%;
+
+}
+
+.menu a {
+    padding-right: 25px;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    
+}
+
+.menu a:hover{
+    color: #CDA45E;
+    transition: 0.3s;
+}
+
+.bookaTable {
+    padding-right: 300px;
+}
+
+.bookaTable button{
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #CDA45E;
+    border-radius: 70px;
+    background-color: transparent;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.bookaTable button:hover{
+    background-color: #CDA45E;
+    transition: 0.3s;
+}
+
+.welcome{
+    width: 40%;
+    height: 550px;
+    margin-top: 20%;
+    margin-left: 18%;
+    color: white;
+}
+
+.welcome h1 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.welcome >h1 >span{
+    color: #CDA45E;
+}
+
+.welcome p {
+    font-family: serif;
+    font-size: 25px;
+}
+
+.welcome-btt{
+    color: white;
+    width: 150px;
+    height: 40px;
+    border: 2px solid #CDA45E;
+    border-radius: 70px;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.welcome-btt:hover {
+    background-color: #CDA45E;
+    transition: 0.3s;
+}
+
+.about{
+    width: 100%;
+    display: flex;
+    background-image: url('img/banner02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.about-infos {
+    padding-left: 18%;
+    padding-right: 2%;
+    width: 1000px;
+    padding-top: 75px;
+    color: white;
+    text-justify: auto;
+    padding-bottom: 250px;
+    background-color: rgba(0, 0, 0, 0.664);
+}
+
+.about-infos h2 {
+    font-size: 32px;
+    padding-top: 10px;
+    font-family: serif;
+    font-weight: 300;
+    
+}
+.about-infos p {
+    font-size: 16px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    line-height: 2em;
+}
+
+.about-infos ul {
+    padding: 20px;
+}
+
+
+.about-banner{
+    display:flex;
+    float: right;
+    margin-left: 100px;
+    margin-top: 100px;
+    width: 600px;
+    height: 500px;
+    background-image: url('img/banner03.jpg');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: cover;
+    border: 5px solid rgba(0, 0, 0, 0.411);
+    transition: .3s;
+}
+
+.about-banner:hover{
+    width: 700px;
+    height: 600px;
+}
+
+.whyUs{
+    display: inline-block;
+    position: flex;
+    width: 100%;
+    height: 460px;
+    align-items: center;
+    align-content: center;
+    background-color: #0C0B09;
+    padding-left: 18%;
+}
+
+
+.whyUs h2{
+    color: #CDA45E;
+    font-size: 40px;
+    font-family: serif;
+    font-weight: 900;
+}
+
+.whyUs p{
+    font-weight: 400;
+    color: #A4A4A4;
+    margin-top: 3%;
+    text-transform: uppercase;
+}
+
+
+.whyS{
+    float: left;
+    margin-top: 2%;
+    width: 400px;
+    height: 250px;
+    background-color: #1A1814;
+    color: white;
+    padding: 0 30px 30px 30px;
+    margin-right: 20px;
+    transition: 0.3s;
+
+}
+.whyS:hover {
+    background-color: #1a181483;
+}
+
+.whyS h3 {
+    font-size: 26px;
+    font-family: serif;
+    padding-bottom: 15px;
+    margin: 0;
+}
+.whyS h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10%;
+    color: #CDA45E;
+    font-size: 26px;
+    padding-bottom: 15px;
+}
+.whyS p {
+    margin: 0;
+    text-transform: none;
+}
+
+
+
+._menu{
+    display: inline-block;
+    position: flex;
+    background-color: #1A1814;
+    padding-left: 18%;
+    width: 100%;
+    height: 800px;
+}
+
+._menu p {
+    font-weight: 400;
+    color: #A4A4A4;
+    margin-top: 5%;
+    text-transform: uppercase;
+}
+
+._menu h2{
+    color: #CDA45E;
+    font-size: 40px;
+    font-family: serif;
+    font-weight: 900;
+}
+
+
+
+@media only screen and (max-width: 1800px){
+   
+    .menu {
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .logo{
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+}
+
+@media only screen and (max-width: 1740px){
+    .menu {
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .logo{
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+}
+
+@media only screen and (max-width: 1557px){
+    .menu {
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .logo{
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+
+    .whyUs{
+        display: blox;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        align-content: center;
+        background-color: #0C0B09;
+        padding-left: 18%;
+        padding-bottom: 50px;
+    }
+    
+    
+    .whyUs h2{
+        color: #CDA45E;
+        font-size: 40px;
+        font-family: serif;
+        font-weight: 900;
+    }
+    
+    .whyUs p{
+        font-weight: 400;
+        color: #A4A4A4;
+        margin-top: 3%;
+        text-transform: uppercase;
+    }
+    
+    .whyS{
+        float: left;
+        margin-top: 2%;
+        width: 400px;
+        height: 250px;
+        background-color: #1A1814;
+        color: white;
+        padding: 0 30px 30px 30px;
+        margin-right: 20px;
+        transition: 0.3s;
+    
+    }
+    .whyS:hover {
+        background-color: #1a181483;
+    }
+    
+    .whyS h3 {
+        font-size: 26px;
+        font-family: serif;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+    .whyS h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 10%;
+        color: #CDA45E;
+        font-size: 26px;
+        padding-bottom: 15px;
+    }
+    .whyS p {
+        margin: 0;
+        text-transform: none;
+    }
+}
+
+@media only screen and (max-width: 980px){
+
+    .funcionamento{
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+    .tel{
+        padding: 2%;
+    }
+
+    .menu {
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .logo{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+    .welcome{
+        margin-left: 10%;
+    }
+
+    .top-banner{
+        background-position: center center;
+    }
+
+    .whyUs{
+        display: blox;
+        width: 100%;
+        height: auto;
+        align-items: center;
+        align-content: center;
+        background-color: #0C0B09;
+        padding-left: 10%;
+        padding-bottom: 50px;
+    }
+    
+    
+    .whyUs h2{
+        color: #CDA45E;
+        font-size: 40px;
+        font-family: serif;
+        font-weight: 900;
+    }
+    
+    .whyUs p{
+        font-weight: 400;
+        color: #A4A4A4;
+        margin-top: 3%;
+        text-transform: uppercase;
+    }
+    
+    .whyS{
+        float: left;
+        margin-top: 2%;
+        width: 300px;
+        height: 250px;
+        background-color: #1A1814;
+        color: white;
+        padding: 0 30px 30px 30px;
+        margin-bottom: 2px;
+        transition: 0.3s;
+    
+    }
+    .whyS:hover {
+        background-color: #1a181483;
+    }
+    
+    .whyS h3 {
+        font-size: 26px;
+        font-family: serif;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+    .whyS h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 10%;
+        color: #CDA45E;
+        font-size: 26px;
+        padding-bottom: 15px;
+    }
+    .whyS p {
+        margin: 0;
+        text-transform: none;
+    }
+
+    .bookaTable{
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .logo{
+        padding: 10px;
+        margin: 10px;
+    }
+}
