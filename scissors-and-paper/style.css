@@ -134,7 +134,7 @@
 
 
 
-@media (max-width: 800px){
+@media (max-width: 970px){
     .game{
         height: 100vh;
         flex-direction: column;
