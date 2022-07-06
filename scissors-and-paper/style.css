@@ -97,16 +97,17 @@
     flex-direction: column;
     align-items: center;
     color: white;
-    height: auto;
+    width: 150px;
     background-color: black;
 }
 
 .bottom .playBtt{
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 20px;
-    height: 30px;
-    width: auto;
+    height: 40px;
+    width: 100px;
     margin-top: 10px;
     border: 2px solid white;
     cursor: pointer;
@@ -119,6 +120,7 @@
 }
 
 .bottom .pontuacoes{
+    font-size: 50px;
     display: flex;
     align-items: center;
 }
@@ -128,4 +130,56 @@
     width: 1px;
     height: 30px;
     background-color: white;
+}
+
+
+
+@media (max-width: 800px){
+    .game{
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: gray;
+    }
+    .left-side{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 200px;
+    }
+    .left-side .imagem{
+        margin: 20px;
+        flex: auto;
+        width: 150px;
+        height: 150px;
+    }
+    .left-side .imagem .srcEnemy{
+        width: 150px;
+        height: 150px;
+    }
+    .right-side{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 500px;
+        flex-direction: column-reverse;
+    }
+    .right-side .imagem{
+        margin: 20px;
+    }
+    .right-side .imagem .srcPlayer{
+        width: 150px;
+        height: 150px;
+    }
+    .escolhas{
+        display: flex;
+    }
+}
+
+@media (max-width: 315px){
+    .escolhas .escolha{
+        font-size: 20px;
+        width: 70px;
+        height: 70px;
+    }
 }
