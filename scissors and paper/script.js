@@ -8,6 +8,8 @@ let rounds = 1;
 let pontosEnemy = 0;
 let pontosPlayer = 0;
 
+let _inimigoJoga = '';
+
     /* VARIAVEIS PARA SET INTERVAL */
 let pontuacaoPlayer;
 let pontuacaoEnemy;
@@ -57,16 +59,19 @@ playBtt.addEventListener('click', ()=>{
 function enemy(){
     opcaoEnemy = Math.floor(Math.random() * 3);
     if(opcaoEnemy == 0){
+        _inimigoJoga = 'pedra';
         _enemyImg.classList.add('pedra');
         _enemyImg.classList.remove('papel');
         _enemyImg.classList.remove('tesoura');
     }
-    if(opcaoEnemy == 1){
+    if(opcaoEnemy == 1){        
+        _inimigoJoga = 'papel';
         _enemyImg.classList.remove('pedra');
         _enemyImg.classList.add('papel');
         _enemyImg.classList.remove('tesoura');
     }
     if(opcaoEnemy == 2){
+        _inimigoJoga = 'tesoura';
         _enemyImg.classList.remove('pedra');
         _enemyImg.classList.remove('papel');
         _enemyImg.classList.add('tesoura');
@@ -103,51 +108,51 @@ function gameChoices(){
         case 0:
             if(opcaoPlayer == '0'){
                 console.log('empate: pedra / pedra');
-                window.alert('empate! jogue novamente');
+                window.alert(`empate! o inimigo jogou ${_inimigoJoga}`);
                 rounds -= 1;
             }
             if(opcaoPlayer == '1'){
                 console.log('ganhou: pedra / papel');
-                window.alert('você ganhou 1 ponto');
+                window.alert(`o inimigo jogou ${_inimigoJoga}, você ganhou 1 ponto`);
                 pontosPlayer += 1;
             }
             if(opcaoPlayer == '2'){
                 console.log('perdeu: pedra / tesoura');
-                window.alert('o inimigo marcou 1 ponto');
+                window.alert(`o inimigo jogou ${_inimigoJoga}, e marcou 1 ponto`);
                 pontosEnemy += 1;
             }
         break;
         case 1:
             if(opcaoPlayer == '0'){
                 console.log('perdeu: papel / pedra');
-                window.alert('o inimigo marcou 1 ponto');
+                window.alert(`o inimigo jogou ${_inimigoJoga}, e marcou 1 ponto`);
                 pontosEnemy += 1;
             }
             if(opcaoPlayer == '1'){
                 console.log('empate: papel / papel');
-                window.alert('empate! jogue novamente');
+                window.alert(`empate! o inimigo jogou ${_inimigoJoga}`);
                 rounds -= 1;
             }
             if(opcaoPlayer == '2'){
                 console.log('ganhou: papel / tesoura');
-                window.alert('você ganhou 1 ponto');
+                window.alert(`o inimigo jogou ${_inimigoJoga}, você ganhou 1 ponto`);
                 pontosPlayer += 1;
             }
         break;
         case 2:
             if(opcaoPlayer == '0'){
                 console.log('ganhou: tesoura / pedra');
-                window.alert('você ganhou 1 ponto');
+                window.alert(`o inimigo jogou ${_inimigoJoga}, você ganhou 1 ponto`);
                 pontosPlayer += 1;
             }
             if(opcaoPlayer == '1'){
                 console.log('perdeu: tesoura / papel');
-                window.alert('o inimigo marcou 1 ponto');
+                window.alert(`o inimigo jogou ${_inimigoJoga}, e marcou 1 ponto`);
                 pontosEnemy += 1;
             }
             if(opcaoPlayer == '2'){
                 console.log('empate: tesoura / tesoura');
-                window.alert('empate! jogue novamente');
+                window.alert(`empate! o inimigo jogou ${_inimigoJoga}`);
                 rounds -= 1;
             }
         break;
