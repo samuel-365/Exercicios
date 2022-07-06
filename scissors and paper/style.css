@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+.game{
+    height: 80vh;
+    display: flex;
+    background-color: gray;
+}
+
+.escolha{ 
+    /* SE BUGAR DEPOIS AS IMAGENS, É PELO DISPLAY FLEX, TIRA E COLOCA A IMAGEM COM BACKGROUND-IMAGE */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+}
+/* esquerda*/
+.game .left-side{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    background-color: rgba(247, 27, 34, 0.4);
+}
+
+.left-side .imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 50px;
+    width: 250px;
+}
+.left-side .imagem .srcEnemy{
+    width: 350px;
+    height: 350px;
+}
+
+
+/* direita*/
+.game .right-side{
+    display: flex;
+    flex: 1;
+    background-color: rgb(46, 27, 245, 0.4);
+}
+.right-side .escolha{  /* SE BUGAR DEPOIS AS IMAGENS, É PELO DISPLAY FLEX, TIRA E COLOCA A IMAGEM COM BACKGROUND-IMAGE */
+    cursor: pointer;
+}
+.right-side .escolha:hover{
+    background-color: black;
+    color: white;
+}
+.right-side .imagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 50px;
+    width: 250px;
+}
+.right-side .imagem .srcPlayer{
+    width: 350px;
+    height: 350px;
+}
+
+.pedra{
+    background-image: url('img/pedra.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.papel{
+    background-image: url('img/papel.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.tesoura{
+    background-image: url('img/tesoura.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    height: auto;
+    background-color: black;
+}
+
+.bottom .playBtt{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 30px;
+    width: auto;
+    margin-top: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+.bottom .playBtt:hover{
+    background-color: white;
+    color: black;
+}
+
+.bottom .pontuacoes{
+    display: flex;
+    align-items: center;
+}
+.pontuacoes .divisao{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 1px;
+    height: 30px;
+    background-color: white;
+}
